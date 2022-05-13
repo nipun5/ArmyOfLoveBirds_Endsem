@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="16dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+
+        <ImageView
+            android:id="@+id/home_puppy_img"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_pic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/home_puppy_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/dummy_name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/home_puppy_breed"
+            app:layout_constraintEnd_toStartOf="@id/home_puppy_gender_container"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toEndOf="@+id/home_puppy_img"
+            app:layout_constraintTop_toTopOf="@id/home_puppy_img" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/home_puppy_breed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/husky"
+            app:layout_constraintStart_toEndOf="@id/home_puppy_img"
+            app:layout_constraintTop_toBottomOf="@id/home_puppy_name" />
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/home_chip_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:layout_marginStart="16dp"
+            android:focusable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/home_puppy_img"
+            app:layout_constraintTop_toBottomOf="@id/home_puppy_breed">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/home_chip_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                tools:text="@string/active" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/home_chip_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                tools:text="@string/cat_friendly" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/home_chip_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                tools:text="@string/cheerful" />
+        </com.google.android.material.chip.ChipGroup>
+        <!--        <com.google.android.material.textview.MaterialTextView-->
+        <!--            android:id="@+id/home_puppy_age"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="16dp"-->
+        <!--            android:text="@string/dummy_age"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@id/home_puppy_img"-->
+        <!--            app:layout_constraintStart_toEndOf="@id/home_puppy_img" />-->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/home_puppy_gender_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toEndOf="@id/home_puppy_name"
+            app:layout_constraintTop_toTopOf="@id/home_puppy_name">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/home_puppy_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="8dp"
+                android:textColor="@color/white"
+                android:paddingBottom="2dp"
+                tools:text="@string/radio_male" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

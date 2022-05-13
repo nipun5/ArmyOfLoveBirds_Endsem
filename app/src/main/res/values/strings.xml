@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">Puppy Adoption</string>
+    <string name="home">Home</string>
+    <string name="favourite">Favourite</string>
+    <string name="new_post">New Post</string>
+    <string name="messages">Messages</string>
+    <string name="profile">Profile</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="or">Or</string>
+    <string name="name">Name</string>
+    <string name="setup">Setup</string>
+    <string name="bio">Bio</string>
+    <string name="add_new_dog_desc">Add new dog</string>
+    <string name="dummy_name">Scooby Doo</string>
+    <string name="dummy_age">2 yrs</string>
+    <string name="dummy_location">801m away</string>
+    <string name="dummy_gender">Male</string>
+    <string name="gender">Gender</string>
+    <string name="age">Age</string>
+    <string name="post">Post</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="years_old">Years Old</string>
+    <string name="adopt_me">Adopt me</string>
+
+    <string name="get_weight">%1$s kg</string>
+    <string name="get_age">%1$s year</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contact_owner">Contact Owner</string>
+    <string name="specify_reason">Specify Reason</string>
+    <string name="ask_for_adoption">Ask for adoption</string>
+    <string name="request">Request</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="send">Send</string>
+    <string name="type_your_message">Type your message</string>
+    <string name="wants_to_adopt">wants to adopt</string>
+
+    <!--    adjectives  about dog -->
+    <string name="active">Active</string>
+    <string name="playful">Playful</string>
+    <string name="cat_friendly">Cat Friendly</string>
+    <string name="cheerful">Cheerful</string>
+    <string name="chubby">Chubby</string>
+    <string name="lazy">Lazy</string>
+    <string name="trained">Trained</string>
+    <string name="easy_to_train">Easy to Train</string>
+    <string name="friendly">Friendly</string>
+    <string name="cuddly">Cuddly</string>
+    <string name="protective">Protective</string>
+    <string name="grumpy">Grumpy</string>
+    <string name="stubborn">Stubborn</string>
+    <string name="rescued">Rescued</string>
+    <string name="muscular">Muscular</string>
+    <string name="giant">Giant</string>
+    <string name="create_a_new_account">New to our App ? Create an account</string>
+    <string name="person_with_dog">Person with dog</string>
+    <string name="logout">Logout</string>
+    <string name="save">Save</string>
+    <string name="something_about_your_dog">Something about your dog</string>
+    <string name="breed">Breed</string>
+    <string name="weight">Weight</string>
+    <string name="tags">Tags</string>
+    <string name="color">Color</string>
+    <string name="about">About</string>
+    <string name="filter">Filter</string>
+
+    <!-- dog breeds   -->
+    <string name="husky">Husky</string>
+    <string name="labrador_retriever">Labrador Retriever</string>
+    <string name="golden_retriever">Golden Retriever</string>
+    <string name="german_shepherd">German Shepherd</string>
+    <string name="bulldog">BullDog</string>
+    <string name="poodle">Poodle</string>
+    <string name="great_dane">Great Dane</string>
+    <string name="rottweiler">Rottweiler</string>
+    <string name="chihuahua">Chihuahua</string>
+    <string name="dobermann">Dobermann</string>
+    <string name="apply">Apply</string>
+    <string name="clear_filter">Clear Filters</string>
+    <string name="location">Location</string>
+
+
+    <!--    dog breeds string array for spinner-->
+    <string-array name="breeds">
+        <item>@string/husky</item>
+        <item>@string/labrador_retriever</item>
+        <item>@string/golden_retriever</item>
+        <item>@string/german_shepherd</item>
+        <item>@string/bulldog</item>
+        <item>@string/poodle</item>
+        <item>@string/great_dane</item>
+        <item>@string/rottweiler</item>
+        <item>@string/chihuahua</item>
+        <item>@string/dobermann</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home"
+    android:label="@string/home"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.vipul.doco.ui.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_homeDetailFragment"
+            app:destination="@id/homeDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_filterBottomSheetFragment"
+            app:destination="@id/filterBottomSheetFragment" />
+        <argument
+            android:name="tagList"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument android:name="breed"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="gender"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_homeFragment_to_filterFragment"
+            app:destination="@id/filterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeDetailFragment"
+        android:name="com.vipul.doco.ui.HomeDetailFragment"
+        android:label="@string/post"
+        tools:layout="@layout/fragment_home_detail">
+        <argument
+            android:name="dogName"
+            app:argType="string" />
+        <argument
+            android:name="dogAge"
+            app:argType="string" />
+        <argument
+            android:name="dogGender"
+            app:argType="string" />
+        <argument
+            android:name="dogDesc"
+            app:argType="string" />
+        <argument
+            android:name="dogImg"
+            app:argType="string" />
+        <argument
+            android:name="ownerID"
+            app:argType="string" />
+        <argument
+            android:name="dogBreed"
+            app:argType="string" />
+        <argument
+            android:name="dogWeight"
+            app:argType="string" />
+        <argument
+            android:name="dogColor"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_homeDetailFragment_to_contactOwnerBottomSheetFragment"
+            app:destination="@id/contactOwnerBottomSheetFragment" />
+        <argument
+            android:name="latitude"
+            app:argType="string" />
+        <argument
+            android:name="longitude"
+            app:argType="string" />
+    </fragment>
+    <dialog
+        android:id="@+id/contactOwnerBottomSheetFragment"
+        android:name="com.vipul.doco.ui.ContactOwnerBottomSheetFragment"
+        android:label="fragment_contact_bottom_sheet"
+        tools:layout="@layout/fragment_contact_bottom_sheet" >
+        <argument
+            android:name="ownerName"
+            app:argType="string" />
+        <argument android:name="ownerBio"
+            app:argType="string" />
+        <argument android:name="ownerImg"
+            app:argType="string" />
+        <argument
+            android:name="ownerID"
+            app:argType="string" />
+        <argument
+            android:name="dogName"
+            app:argType="string" />
+    </dialog>
+    <dialog
+        tools:layout="@layout/fragment_filter_bottom_sheet"
+        android:id="@+id/filterBottomSheetFragment"
+        android:name="com.vipul.doco.ui.FilterBottomSheetFragment"
+        android:label="FilterBottomSheetFragment" >
+        <action
+            android:id="@+id/action_filterBottomSheetFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </dialog>
+    <fragment
+        tools:layout="@layout/fragment_filter"
+        android:id="@+id/filterFragment"
+        android:name="com.vipul.doco.ui.FilterFragment"
+        android:label="FilterFragment" >
+        <action
+            android:id="@+id/action_filterFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

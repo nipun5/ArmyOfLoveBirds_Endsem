@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1033307275938",
+    "project_id": "test-c4d45",
+    "storage_bucket": "test-c4d45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033307275938:android:430fb4b8e3e930fcfa8dfb",
+        "android_client_info": {
+          "package_name": "com.vipul.doco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1033307275938-9q3qd0uhvp2kturhmeco6ldodipqj9kt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-UrL7uDQmIuzhU04iHFVacxL6273NGeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1033307275938-9q3qd0uhvp2kturhmeco6ldodipqj9kt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
